@@ -1,0 +1,125 @@
+@import 'https://fonts.google.com/specimen/Josefin+Sans';
+:root{
+    --mobileWidth:375px;
+    --desktopWidth:1440px;
+    --brightBlue:hsl(220, 98%, 61%);
+    --checkBrackground:hsl(192, 100%, 67%),hsl(280, 87%, 65%);
+    /*Light Theme*/
+    --veryLightGray:hsl(0, 0%, 98%);
+    --veryLightGrayishBlue:hsl(236, 33%, 92%);
+    --lightGrayishBlue:hsl(233, 11%, 84%);
+    --darkGrayishBlue:hsl(236, 9%, 61%);
+    --veryDarkGrayishBlue:hsl(235, 19%, 35%);
+    /*Dark Theme*/
+    --VeryDarkBlue: hsl(235, 21%, 11%);
+    --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+    --LightGrayishBlue: hsl(234, 39%, 85%);
+    --LightGrayishBlue3: hsl(236, 33%, 92%); /*(hover)*/
+    --DarkGrayishBlue: hsl(234, 11%, 52%);
+    --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+    --VeryDarkGrayishBlue2: hsl(237, 14%, 26%);
+    /*Typo*/
+    --fontSize:18px;
+    --fontFamily:Josefin Sans,sans-serif;
+    --weightsLight:400;
+    --weightsBold:700;
+    /*Colors no specifieds*/
+    --red:#D13F30;
+    --brown:#EAE3DB;
+    --moreBrow:#AEA4A2;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--VeryDarkDesaturatedBlue);
+}
+
+.main-calculator{
+    background-color: var(--VeryDarkDesaturatedBlue);
+    color: var(--LightGrayishBlue3);
+    max-width: var(--mobileWidth);
+    width: 100%;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+
+.button-calc{
+    border-radius: 8px;
+    color: var(--VeryDarkGrayishBlue2);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    font-weight: var(--weightsBold);
+    background-color: var(--brown);
+    box-shadow: 0px 2px 0px 1px rgb(174 164 162);
+    border: none;
+    padding: 0.7rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.selection-option{
+    height: 58px;
+    width: 18px;
+    font-weight: var(--weightsBold);
+    position: absolute;
+    cursor: pointer;
+    top: -14px;
+    z-index: 2;
+    text-align: center;
+}
+
+.first{
+    left: 10px;
+}
+.three{
+    right: 11px;
+}
+
+
+.actions-theme-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-container{
+    position: relative;
+}
+
+.themes-class{
+    display: flex;
+}
+
+.theme-text{
+    display: flex;
+    align-items: center;
+}
+
+.slider{
+    padding: .4rem;
+    border-radius: 30px;
+    width: 100px;
+    max-width: 100%;
+    background-color: var(--VeryDarkBlue);
+    transition: .3s ease-in-out;
+    position: relative;
+}
+
+.point-selection{
+    background-color: var(--red);
+    transition: .3s ease-in-out;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    transform: translateX(0px);
+}
+
+.theme-selection{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.3rem 0;
+}
+
