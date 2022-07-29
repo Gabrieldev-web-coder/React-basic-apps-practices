@@ -1,125 +1,248 @@
-@import 'https://fonts.google.com/specimen/Josefin+Sans';
-:root{
-    --mobileWidth:375px;
-    --desktopWidth:1440px;
-    --brightBlue:hsl(220, 98%, 61%);
-    --checkBrackground:hsl(192, 100%, 67%),hsl(280, 87%, 65%);
-    /*Light Theme*/
-    --veryLightGray:hsl(0, 0%, 98%);
-    --veryLightGrayishBlue:hsl(236, 33%, 92%);
-    --lightGrayishBlue:hsl(233, 11%, 84%);
-    --darkGrayishBlue:hsl(236, 9%, 61%);
-    --veryDarkGrayishBlue:hsl(235, 19%, 35%);
-    /*Dark Theme*/
-    --VeryDarkBlue: hsl(235, 21%, 11%);
-    --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-    --LightGrayishBlue: hsl(234, 39%, 85%);
-    --LightGrayishBlue3: hsl(236, 33%, 92%); /*(hover)*/
-    --DarkGrayishBlue: hsl(234, 11%, 52%);
-    --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
-    --VeryDarkGrayishBlue2: hsl(237, 14%, 26%);
-    /*Typo*/
-    --fontSize:18px;
-    --fontFamily:Josefin Sans,sans-serif;
-    --weightsLight:400;
-    --weightsBold:700;
-    /*Colors no specifieds*/
-    --red:#D13F30;
-    --brown:#EAE3DB;
-    --moreBrow:#AEA4A2;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;700;800&display=swap");
+
+:root {
+  --mobileWidth: 375px;
+  --desktopWidth: 1440px;
+  --brightBlue: hsl(220, 98%, 61%);
+  --checkBrackground: hsl(192, 100%, 67%), hsl(280, 87%, 65%);
+  /*Light Theme*/
+  --veryLightGray: hsl(0, 0%, 98%);
+  --veryLightGrayishBlue: hsl(236, 33%, 92%);
+  --lightGrayishBlue: hsl(233, 11%, 84%);
+  --darkGrayishBlue: hsl(236, 9%, 61%);
+  --veryDarkGrayishBlue: hsl(235, 19%, 35%);
+  /*Dark Theme*/
+  --VeryDarkBlue: hsl(235, 21%, 11%);
+  --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  --LightGrayishBlue: hsl(234, 39%, 85%);
+  --LightGrayishBlue3: hsl(236, 33%, 92%); /*(hover)*/
+  --DarkGrayishBlue: hsl(234, 11%, 52%);
+  --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+  --VeryDarkGrayishBlue2: hsl(237, 14%, 26%);
+  /*Typo*/
+  --fontSize: 18px;
+  --fontFamily: Josefin Sans, sans-serif;
+  --weightsLight: 400;
+  --weightsBold: 700;
+  /*Colors no specifieds*/
+  --red: #d13f30;
+  --moreRed: #882a22;
+  --brown: #eae3db;
+  --moreBrow: #aea4a2;
 }
 
-.background{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--VeryDarkDesaturatedBlue);
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--VeryDarkDesaturatedBlue);
+  font-family: "League Spartan", sans-serif !important;
 }
 
-.main-calculator{
-    background-color: var(--VeryDarkDesaturatedBlue);
-    color: var(--LightGrayishBlue3);
-    max-width: var(--mobileWidth);
-    width: 100%;
-    font-family: var(--fontFamily);
-    font-size: var(--fontSize);
+.main-calculator {
+  background-color: var(--VeryDarkDesaturatedBlue);
+  color: var(--LightGrayishBlue3);
+  max-width: var(--mobileWidth);
+  width: 100%;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
 }
 
-.button-calc{
-    border-radius: 8px;
-    color: var(--VeryDarkGrayishBlue2);
-    font-family: var(--fontFamily);
-    font-size: var(--fontSize);
-    font-weight: var(--weightsBold);
-    background-color: var(--brown);
-    box-shadow: 0px 2px 0px 1px rgb(174 164 162);
-    border: none;
-    padding: 0.7rem 2rem;
-    margin: 0.5rem;
-    cursor: pointer;
+.button-calc {
+  border-radius: 8px;
+  color: var(--VeryDarkGrayishBlue2);
+  font-family: var(--fontFamily);
+  font-size: 1.8rem;
+  font-weight: var(--weightsBold);
+  background-color: var(--brown);
+  box-shadow: 0px 2px 0px 1px rgb(174 164 162);
+  border: none;
+  width: 70px;
+  height: 50px;
+  padding: 0.7rem 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
-.selection-option{
-    height: 58px;
-    width: 18px;
-    font-weight: var(--weightsBold);
-    position: absolute;
-    cursor: pointer;
-    top: -14px;
-    z-index: 2;
-    text-align: center;
+.selection-option {
+  width: 18px;
+  font-weight: var(--weightsBold);
+  position: absolute;
+  cursor: pointer;
+  top: -14px;
+  z-index: 2;
+  text-align: center;
 }
 
-.first{
-    left: 10px;
+.first {
+  left: 10px;
 }
-.three{
-    right: 11px;
-}
-
-
-.actions-theme-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.three {
+  right: 11px;
 }
 
-.slider-container{
-    position: relative;
+.actions-theme-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.themes-class{
-    display: flex;
+.slider-container {
+  position: relative;
 }
 
-.theme-text{
-    display: flex;
-    align-items: center;
+.themes-class {
+  display: flex;
 }
 
-.slider{
-    padding: .4rem;
-    border-radius: 30px;
-    width: 100px;
-    max-width: 100%;
-    background-color: var(--VeryDarkBlue);
-    transition: .3s ease-in-out;
-    position: relative;
+.theme-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 1rem;
 }
 
-.point-selection{
-    background-color: var(--red);
-    transition: .3s ease-in-out;
-    border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    transform: translateX(0px);
+.slider {
+  padding: 0.4rem;
+  border-radius: 30px;
+  width: 100px;
+  max-width: 100%;
+  background-color: var(--VeryDarkBlue);
+  transition: 0.3s ease-in-out;
+  position: relative;
 }
 
-.theme-selection{
-    display: flex;
-    justify-content: space-around;
-    margin: 0.3rem 0;
+.point-selection {
+  background-color: var(--red);
+  transition: 0.3s ease-in-out;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  transform: translateX(0px);
 }
 
+.theme-selection {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.3rem 0;
+}
+
+.visualizer-calculator {
+  background-color: var(--VeryDarkBlue);
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  min-height: 85px;
+}
+
+.output-result {
+  font-weight: 700;
+  text-align: right;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.dashboard-table-actions {
+  background-color: var(--VeryDarkBlue);
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+}
+
+.special-action {
+  background-color: var(--VeryDarkGrayishBlue) !important;
+  color: var(--LightGrayishBlue3);
+  border-radius: 0.6rem;
+  box-shadow: 0px 2px 0px 1px var(--VeryDarkGrayishBlue2);
+}
+
+.equal {
+  background-color: var(--red) !important;
+  box-shadow: 0px 2px 0px 1px var(--moreRed);
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eigh {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zero {
+  grid-area: zero;
+}
+.dot {
+  grid-area: dot;
+}
+.slash {
+  grid-area: slash;
+}
+
+.ex {
+  grid-area: x;
+}
+
+.less {
+  grid-area: less;
+}
+.plus {
+  grid-area: plus;
+}
+.del {
+  grid-area: del;
+}
+
+.reset-calc {
+  grid-area: reset;
+  grid-column: 1 / span 2;
+  width: 90%;
+}
+.equal {
+  grid-area: equal;
+  grid-column: 3 / span 4;
+  width: 90%;
+}
+
+.buttons-section {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas:
+    "seven eight nine del"
+    "four five six plus"
+    "one two three less"
+    "dot zero slash x"
+    "reset . . equal";
+  row-gap: 1rem;
+}
+
+button {
+  margin: 0 !important;
+}

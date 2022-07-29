@@ -1,5 +1,9 @@
-export default function Todo(){
-    return(
-        <h1>Todo component</h1>
-    );
+import React from "react";
+
+export default class Todo extends React.Component {
+    render(){
+        return (
+            <h1>Hola! </h1>
+        )
+    }
 }
