@@ -1,18 +1,7 @@
 import "../styles/calculator.css";
+import theme from "../services/themes.service.js";
 
 export default function Calculator() {
-  const originlTheme = () => {
-    const background = document.getElementById("back");
-    if (background?.style.getPropertyValue("--VeryDarkDesaturatedBlue")) {
-      return;
-    } else {
-      background?.style.setProperty(
-        "--VeryDarkDesaturatedBlue",
-        "--veryLightGray"
-      );
-    }
-  };
-
   return (
     <div id="back" className="background">
       <main className="main-calculator">
@@ -30,12 +19,22 @@ export default function Calculator() {
                 <div className="theme-selection">
                   <span
                     className="selection-option first"
-                    onClick={originlTheme}
+                    onClick={theme.originlTheme}
                   >
                     1
                   </span>
-                  <span className="selection-option">2</span>
-                  <span className="selection-option three">3</span>
+                  <span
+                    className="selection-option"
+                    onClick={theme.secondlTheme}
+                  >
+                    2
+                  </span>
+                  <span
+                    className="selection-option three"
+                    onClick={theme.thirdTheme}
+                  >
+                    3
+                  </span>
                 </div>
                 <div className="slider">
                   <div className="point-selection"></div>
@@ -65,10 +64,10 @@ export default function Calculator() {
               <button className="button-calc ex">x</button>
               <button className="button-calc less">-</button>
               <button className="button-calc plus">+</button>
-              <button className="button special-action del">
+              <button className="button special-action theme-change del">
                 <strong>DEL</strong>
               </button>
-              <button className="button special-action reset-calc">
+              <button className="button special-action theme-change reset-calc">
                 <strong>RESET</strong>
               </button>
               <button className="button special-action equal">

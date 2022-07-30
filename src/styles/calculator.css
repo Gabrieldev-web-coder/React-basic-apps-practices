@@ -29,6 +29,10 @@
   --moreRed: #882a22;
   --brown: #eae3db;
   --moreBrow: #aea4a2;
+  --tableTheme2: #d3cdcd;
+  --backGround2: #e6e6e6;
+  --green: #378288;
+  --greenShadow: #1a5f66;
 }
 
 .background {
@@ -38,6 +42,8 @@
   height: 100vh;
   background-color: var(--VeryDarkDesaturatedBlue);
   font-family: "League Spartan", sans-serif !important;
+  transition: 0.3s ease-in-out;
+  will-change: auto;
 }
 
 .main-calculator {
@@ -153,6 +159,7 @@
   background-color: var(--VeryDarkBlue);
   padding: 0.8rem;
   border-radius: 0.6rem;
+  transition: 0.3s ease-in-out;
 }
 
 .special-action {
