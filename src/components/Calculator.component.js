@@ -19,19 +19,19 @@ export default function Calculator() {
                 <div className="theme-selection">
                   <span
                     className="selection-option first"
-                    onClick={theme.originlTheme}
+                    onClick={theme.originalTheme}
                   >
                     1
                   </span>
                   <span
                     className="selection-option"
-                    onClick={theme.secondlTheme}
+                    onClick={theme.lightTheme}
                   >
                     2
                   </span>
                   <span
                     className="selection-option three"
-                    onClick={theme.thirdTheme}
+                    onClick={theme.darkTheme}
                   >
                     3
                   </span>
@@ -44,7 +44,7 @@ export default function Calculator() {
           </div>
 
           <div className="visualizer-calculator p-5 m-5">
-            <output className="output-result" id="result-visualizer"></output>
+            <output className="output-result" id="result-visualizer">999,23</output>
           </div>
 
           <div className="dashboard-table-actions">

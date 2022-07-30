@@ -33,6 +33,16 @@
   --backGround2: #e6e6e6;
   --green: #378288;
   --greenShadow: #1a5f66;
+  /*Negative theme*/
+  --fontColorNegative: hsl(52, 91%, 58%);
+  --purpleBack: hsl(268, 75%, 9%);
+  --purpleLight: hsl(269, 74%, 12%);
+  --purpleVeryLight: hsl(281, 91%, 25%);
+  --purpleShadowSpecial: hsl(284, 91%, 52%);
+  --cyan: hsl(176, 96%, 44%);
+  --cyanShadow: hsl(176, 91%, 70%);
+  --buttonBack: hsl(267, 51%, 21%);
+  --buttonShadow: hsl(290, 69%, 36%);
 }
 
 .background {
@@ -47,12 +57,13 @@
 }
 
 .main-calculator {
-  background-color: var(--VeryDarkDesaturatedBlue);
+  background-color: transparent;
   color: var(--LightGrayishBlue3);
   max-width: var(--mobileWidth);
   width: 100%;
   font-family: var(--fontFamily);
   font-size: var(--fontSize);
+  transition: 0.3s ease-in-out;
 }
 
 .button-calc {
@@ -62,7 +73,7 @@
   font-size: 1.8rem;
   font-weight: var(--weightsBold);
   background-color: var(--brown);
-  box-shadow: 0px 2px 0px 1px rgb(174 164 162);
+  box-shadow: 0px 2px 0px 0px rgb(174 164 162);
   border: none;
   width: 70px;
   height: 50px;
@@ -163,15 +174,19 @@
 }
 
 .special-action {
-  background-color: var(--VeryDarkGrayishBlue) !important;
+  background-color: var(--VeryDarkGrayishBlue);
   color: var(--LightGrayishBlue3);
   border-radius: 0.6rem;
-  box-shadow: 0px 2px 0px 1px var(--VeryDarkGrayishBlue2);
+  box-shadow: 0px 2px 0px 0px var(--VeryDarkGrayishBlue2);
+  margin: 1rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 .equal {
-  background-color: var(--red) !important;
-  box-shadow: 0px 2px 0px 1px var(--moreRed);
+  background-color: var(--red);
+  box-shadow: 0px 2px 0px 0px var(--moreRed);
 }
 
 .one {

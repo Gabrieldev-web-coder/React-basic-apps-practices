@@ -5,5 +5,5 @@ export default class Todo extends React.Component {
         return (
             <h1>Hola! </h1>
         )
-    }
+    }    
 }

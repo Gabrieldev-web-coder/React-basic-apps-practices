@@ -26,8 +26,8 @@ export default function Counter(){
                 </div>
             </div>
             <div className="actions-btn">
-            <button onClick={()=>pluCount(count++)} className="button clic">Contar</button>
-            <button onClick={()=>pluCount(count=0)} className="button clic reset">Reiniciar</button>
+            <button onClick={()=>pluCount(count++)} className="button-counter clic">Contar</button>
+            <button onClick={()=>pluCount(count=0)} className="button-counter clic reset">Reiniciar</button>
             </div>
         </main>
         </div>
